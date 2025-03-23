@@ -1,4 +1,4 @@
-/* === KURDIS FONT SETUP === */
+/* === KURDIS FONTS === */
 @font-face {
   font-family: 'Kurdis';
   src: url('../fonts/kurdis-regular.woff') format('woff');
@@ -6,13 +6,7 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'Kurdis Condensed';
-  src: url('../fonts/kurdis-condensed.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
 @font-face {
   font-family: 'Kurdis Wide';
   src: url('../fonts/kurdis-wide.woff') format('woff');
@@ -20,6 +14,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Kurdis ExtraWide ExtraBold';
   src: url('../fonts/kurdis-extrawide-extrabold.woff') format('woff');
@@ -28,58 +23,49 @@
   font-display: swap;
 }
 
-/* === BASE PAGE STYLES === */
+/* === BASE === */
 body {
   font-family: 'Kurdis', serif;
   font-size: 18px;
   line-height: 1.7;
-  background: #fffdf6 !important;
+  background: #fffdf6;
   color: #111;
   padding: 2rem;
-}
-
-body, p, h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Kurdis', serif;
-  color: #111;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 a {
+  color: #111;
   text-decoration: underline;
-  color: #000;
 }
 
-/* === HEADER & SITE IDENTITY === */
-.site-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #000;
-  padding-bottom: 1rem;
-}
-
-h1.site-title {
-  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif !important;
-  font-size: 2.5rem;
-  margin-bottom: 0.25rem;
+/* === MASTHEAD === */
+.site-title {
+  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  font-size: 3rem;
   text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 
 .site-subtitle {
-  font-family: 'Kurdis Condensed', serif !important;
-  font-size: 0.95rem;
+  font-family: 'Kurdis Wide', serif;
+  font-size: 1rem;
+  margin-top: 0;
   color: #444;
-  margin: 0;
 }
 
-/* === NAVIGATION === */
+/* === NAV (if used) === */
 nav ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   display: flex;
   gap: 1.5rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1.5rem 0;
 }
 
 nav a {
-  font-family: 'Kurdis Condensed', serif;
+  font-family: 'Kurdis Wide', serif;
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #000;
@@ -87,58 +73,68 @@ nav a {
   border-bottom: 1px solid #000;
 }
 
-nav a:hover {
-  opacity: 0.7;
-}
-
 /* === TYPOGRAPHY === */
 h2, h3 {
-  font-family: 'Kurdis Wide', sans-serif;
-  line-height: 1.3;
+  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.byline, .metadata {
+  font-family: 'Kurdis Wide', serif;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* === ARTICLES === */
+article {
   margin-top: 2rem;
 }
 
-.byline {
-  font-family: 'Kurdis Condensed', serif !important;
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
 blockquote {
-  margin: 2rem 0;
-  padding-left: 1rem;
   border-left: 4px solid #000;
+  padding-left: 1rem;
+  margin: 2rem 0;
   font-style: italic;
   color: #333;
 }
 
-/* === ARTICLE LAYOUT === */
-article {
-  max-width: 700px;
-  margin: 0 auto;
+/* === ARTICLE PREVIEWS === */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-.article-preview {
-  padding: 1rem 0;
-  border-top: 1px solid #ccc;
+@media (min-width: 768px) {
+  .grid.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
 .article-preview h2 {
-  font-family: 'Kurdis Wide', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0.25rem;
+  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
 }
 
 .article-preview .byline {
-  font-family: 'Kurdis Condensed', serif;
+  font-family: 'Kurdis Wide', serif;
   font-size: 0.85rem;
   color: #555;
 }
 
 /* === FOOTNOTES & ANNOTATIONS === */
 .footnotes {
-  font-family: 'Kurdis Condensed', serif;
+  font-family: 'Kurdis Wide', serif;
   font-size: 0.9rem;
   color: #333;
 }
@@ -170,36 +166,10 @@ article {
   opacity: 1;
 }
 
-/* === GRID SYSTEM === */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .grid-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .grid-auto {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-}
-
 /* === FOOTER === */
 footer {
   margin-top: 4rem;
   font-size: 0.85rem;
   color: #666;
   text-align: center;
-}
-
-footer a {
-  color: #666;
-  text-decoration: underline;
 }
