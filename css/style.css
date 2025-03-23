@@ -5,11 +5,13 @@
 /* === COLORS === */
 :root {
   --color-bg: #fdfaf6;
-  --color-text: #111;
+  --color-text: #111111;
   --color-accent: #e63946;
-  --color-subtle: #5c5c5c;
-  --color-border: #dddddd;
-  --color-quote: #990000;
+  --color-subtle: #5a5a5a;
+  --color-border: #e0ded9;
+  --color-quote: #a90000;
+  --color-link: #2222cc;
+  --color-note-bg: #f4f1eb;
 }
 
 /* === GLOBAL RESET === */
@@ -35,7 +37,7 @@ img, video, canvas {
 }
 
 a {
-  color: var(--color-text);
+  color: var(--color-link);
   text-decoration: underline;
 }
 
