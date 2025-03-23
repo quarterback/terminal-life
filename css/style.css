@@ -6,12 +6,12 @@
 :root {
   --color-bg: #ffeef2;
   --color-text: #000000;
-  --color-accent: #ff0080;
+  --color-accent: #ff4444;
   --color-subtle: #555;
   --color-border: #000000;
   --color-quote: #0088ff;
-  --color-link: #1111ff;
-  --color-note-bg: #fffbe6;
+  --color-link: #6a0000;
+  --color-note-bg: #e5e5e5;
 }
 
 /* === RESET === */
