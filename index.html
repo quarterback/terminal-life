@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>AxInterface</title>
   <meta name="description" content="AxInterface is a critical publication examining the politics of design, infrastructure, and digital life. Essays, fragments, and provocations about how interfaces shape power.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,7 +13,8 @@
   <link rel="stylesheet" href="fonts/kurdis-condensed.css">
   <link rel="stylesheet" href="fonts/kurdis-extrawide-extrabold.css">
 
-  <!-- Styles -->
+  <!-- Shoelace Base + Custom Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,8 +23,18 @@
     <p class="site-subtitle">Critical ideas in uncanny times</p>
   </header>
 
+  <nav>
+    <ul style="display: flex; gap: 1rem; margin-top: 1rem; list-style: none; padding: 0;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <div id="article-list" class="grid grid-2"></div>
+    <section style="margin-top: 3rem;">
+      <h2 style="font-family: 'Kurdis-ExtraWideExtraBold', sans-serif; font-size: 1.5rem; margin-bottom: 1rem;">Recent Articles</h2>
+      <div id="article-list" class="grid grid-auto"></div>
+    </section>
   </main>
 
   <footer>
