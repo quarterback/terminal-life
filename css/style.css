@@ -93,6 +93,43 @@ blockquote {
   color: #555;
 }
 
+/* === GRID SYSTEM === */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.article-preview {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.article-preview h2 {
+  font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.article-preview .byline {
+  font-family: 'Kurdis-Wide', serif;
+  font-size: 0.85rem;
+  color: #555;
+}
+
 /* === FOOTNOTES & ANNOTATIONS === */
 .fn {
   cursor: help;
