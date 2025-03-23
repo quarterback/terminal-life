@@ -1,71 +1,69 @@
-@font-face {
-  font-family: 'Kurdis';
-  src: url('../fonts/kurdis-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Kurdis Condensed';
-  src: url('../fonts/kurdis-condensed.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Kurdis Wide';
-  src: url('../fonts/kurdis-wide.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Kurdis ExtraWide ExtraBold';
-  src: url('../fonts/kurdis-extrawide-extrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
 body {
-  margin: 0;
-  padding: 2rem;
-  background: #fffdf6;
-  color: #111;
   font-family: 'Kurdis', serif;
   font-size: 18px;
   line-height: 1.7;
+  background: #fffdf6;
+  color: #111;
 }
-.site-header {
-  border-bottom: 2px solid #000;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
+
+/* Fonts loaded via @font-face (already in your version) */
+
 .site-title {
   font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
   font-size: 2.5rem;
   margin: 0;
+  text-transform: uppercase;
 }
+
 .site-subtitle {
   font-family: 'Kurdis Condensed', serif;
   font-size: 0.95rem;
   margin-top: 0.3rem;
   color: #444;
 }
-.article-preview h2 a {
-  font-family: 'Kurdis Wide', sans-serif;
-  font-size: 1.4rem;
-  text-decoration: underline;
-  color: #000;
-}
-.article-preview .byline {
+
+.byline {
   font-family: 'Kurdis Condensed', serif;
   font-size: 0.85rem;
   color: #555;
 }
-blockquote {
-  margin: 2rem 0;
-  padding-left: 1rem;
-  border-left: 4px solid #000;
-  font-style: italic;
+
+h2 {
+  font-family: 'Kurdis Wide', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Footnotes */
+.footnotes {
+  font-family: 'Kurdis Condensed', serif;
+  font-size: 0.9rem;
   color: #333;
+}
+
+.fn {
+  cursor: help;
+  border-bottom: 1px dashed #444;
+  position: relative;
+}
+
+.fn::after {
+  content: attr(data-note);
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 220px;
+  background: #111;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.fn:hover::after {
+  opacity: 1;
 }
