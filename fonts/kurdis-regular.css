@@ -1,0 +1,27 @@
+/*
+Font: 		Kurdis
+Style: 		Regular
+URL: 		https://youworkforthem.com/font/T20147/kurdis-font-family
+Foundry: 	That That
+Foundry: 	https://youworkforthem.com/designer/1514/that-that
+Copyright:	
+Version: 	17
+Created:	December 06, 2023
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Kurdis-Regular';
+	src: url('kurdis-regular.eot');
+	src: url('kurdis-regular.eot?#iefix') format('embedded-opentype'),
+             url('kurdis-regular.woff2') format('woff2'),
+	     url('kurdis-regular.woff') format('woff'),
+	     url('kurdis-regular.ttf') format('truetype'),
+	     url('kurdis-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
