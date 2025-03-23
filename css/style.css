@@ -1,31 +1,6 @@
-/* === KURDIS FONTS === */
-@font-face {
-  font-family: 'Kurdis';
-  src: url('../fonts/kurdis-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kurdis Wide';
-  src: url('../fonts/kurdis-wide.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Kurdis ExtraWide ExtraBold';
-  src: url('../fonts/kurdis-extrawide-extrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* === BASE === */
 body {
-  font-family: 'Kurdis', serif;
+  font-family: 'Kurdis-Regular', serif;
   font-size: 18px;
   line-height: 1.7;
   background: #fffdf6;
@@ -42,40 +17,22 @@ a {
 
 /* === MASTHEAD === */
 .site-title {
-  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
 }
 
 .site-subtitle {
-  font-family: 'Kurdis Wide', serif;
+  font-family: 'Kurdis-Wide', serif;
   font-size: 1rem;
   margin-top: 0;
   color: #444;
 }
 
-/* === NAV (if used) === */
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-nav a {
-  font-family: 'Kurdis Wide', serif;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-}
-
 /* === TYPOGRAPHY === */
 h2, h3 {
-  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -88,13 +45,15 @@ h3 {
   font-size: 1.2rem;
 }
 
-.byline, .metadata {
-  font-family: 'Kurdis Wide', serif;
+.byline,
+.metadata,
+.footnotes {
+  font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
   color: #555;
 }
 
-/* === ARTICLES === */
+/* === ARTICLE === */
 article {
   margin-top: 2rem;
 }
@@ -123,22 +82,16 @@ blockquote {
 .article-preview h2 {
   font-size: 1.4rem;
   margin-bottom: 0.25rem;
-  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
 }
 
 .article-preview .byline {
-  font-family: 'Kurdis Wide', serif;
+  font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
   color: #555;
 }
 
 /* === FOOTNOTES & ANNOTATIONS === */
-.footnotes {
-  font-family: 'Kurdis Wide', serif;
-  font-size: 0.9rem;
-  color: #333;
-}
-
 .fn {
   cursor: help;
   border-bottom: 1px dashed #444;
