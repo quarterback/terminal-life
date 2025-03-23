@@ -12,4 +12,7 @@ fetch('articles.json')
       `;
       container.appendChild(block);
     });
+  })
+  .catch(error => {
+    console.error("Error loading articles:", error);
   });
