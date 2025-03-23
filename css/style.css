@@ -1,24 +1,63 @@
+/* === Kurdis Font Faces === */
+@font-face {
+  font-family: 'Kurdis';
+  src: url('../fonts/kurdis-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis Condensed';
+  src: url('../fonts/kurdis-condensed.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis Wide';
+  src: url('../fonts/kurdis-wide.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis ExtraWide ExtraBold';
+  src: url('../fonts/kurdis-extrawide-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Base Typography & Color === */
 body {
   font-family: 'Kurdis', serif;
   font-size: 18px;
   line-height: 1.7;
-  background: #fffdf6;
+  background: #fffdf6 !important;
+  color: #111;
+  padding: 2rem;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Kurdis', serif;
   color: #111;
 }
 
-/* Fonts loaded via @font-face (already in your version) */
+a {
+  text-decoration: underline;
+}
 
-.site-title {
+h1.site-title {
   font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
   font-size: 2.5rem;
-  margin: 0;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .site-subtitle {
   font-family: 'Kurdis Condensed', serif;
   font-size: 0.95rem;
-  margin-top: 0.3rem;
+  margin-top: 0;
   color: #444;
 }
 
@@ -26,15 +65,30 @@ body {
   font-family: 'Kurdis Condensed', serif;
   font-size: 0.85rem;
   color: #555;
+  margin-top: 0.5rem;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Kurdis Wide', sans-serif;
-  font-size: 1.5rem;
   margin-top: 2rem;
+  line-height: 1.3;
 }
 
-/* Footnotes */
+/* === Article Layout === */
+article {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #000;
+  font-style: italic;
+  color: #333;
+}
+
+/* === Footnotes & Annotations === */
 .footnotes {
   font-family: 'Kurdis Condensed', serif;
   font-size: 0.9rem;
@@ -66,4 +120,41 @@ h2 {
 
 .fn:hover::after {
   opacity: 1;
+}
+
+/* === Responsive Grid Layouts === */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.article-preview {
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.article-preview h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  color: #666;
 }
