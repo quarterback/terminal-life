@@ -15,6 +15,7 @@ a {
   text-decoration: underline;
 }
 
+
 /* === MASTHEAD === */
 .site-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
@@ -29,6 +30,7 @@ a {
   margin-top: 0;
   color: #444;
 }
+
 
 /* === TYPOGRAPHY === */
 h2, h3 {
@@ -53,6 +55,7 @@ h3 {
   color: #555;
 }
 
+
 /* === ARTICLE === */
 article {
   margin-top: 2rem;
@@ -68,32 +71,8 @@ blockquote {
   margin: 2rem 0;
 }
 
-/* === ARTICLE PREVIEWS === */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
 
-@media (min-width: 768px) {
-  .grid.grid-auto {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-}
-
-.article-preview h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.25rem;
-  font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-}
-
-.article-preview .byline {
-  font-family: 'Kurdis-Wide', serif;
-  font-size: 0.85rem;
-  color: #555;
-}
-
-/* === GRID SYSTEM === */
+/* === ARTICLE PREVIEWS & RESPONSIVE GRID === */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -101,6 +80,7 @@ blockquote {
   margin-top: 2rem;
 }
 
+/* Responsive layouts */
 @media (min-width: 600px) {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
@@ -113,6 +93,13 @@ blockquote {
   }
 }
 
+@media (min-width: 768px) {
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+
+/* Preview cards inside the grid */
 .article-preview {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
@@ -129,6 +116,7 @@ blockquote {
   font-size: 0.85rem;
   color: #555;
 }
+
 
 /* === FOOTNOTES & ANNOTATIONS === */
 .fn {
@@ -157,6 +145,7 @@ blockquote {
 .fn:hover::after {
   opacity: 1;
 }
+
 
 /* === FOOTER === */
 footer {
