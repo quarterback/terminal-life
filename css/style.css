@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Kurdis';
+  src: url('../fonts/kurdis-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis Condensed';
+  src: url('../fonts/kurdis-condensed.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis Wide';
+  src: url('../fonts/kurdis-wide.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kurdis ExtraWide ExtraBold';
+  src: url('../fonts/kurdis-extrawide-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 2rem;
+  background: #fffdf6;
+  color: #111;
+  font-family: 'Kurdis', serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.site-header {
+  border-bottom: 2px solid #000;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+.site-title {
+  font-family: 'Kurdis ExtraWide ExtraBold', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.site-subtitle {
+  font-family: 'Kurdis Condensed', serif;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+  color: #444;
+}
+.article-preview h2 a {
+  font-family: 'Kurdis Wide', sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #000;
+}
+.article-preview .byline {
+  font-family: 'Kurdis Condensed', serif;
+  font-size: 0.85rem;
+  color: #555;
+}
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #000;
+  font-style: italic;
+  color: #333;
+}
