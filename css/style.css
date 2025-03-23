@@ -19,18 +19,19 @@ a {
 /* === MASTHEAD === */
 .site-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-  font-size: 3rem;
+  font-size: clamp(1.75rem, 6vw, 3rem);
   text-transform: uppercase;
   margin-bottom: 0.25rem;
+  word-break: break-word;
 }
 
 .site-subtitle {
   font-family: 'Kurdis-Wide', serif;
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
   margin-top: 0;
   color: #444;
+  word-break: break-word;
 }
-
 
 /* === TYPOGRAPHY === */
 h2, h3 {
