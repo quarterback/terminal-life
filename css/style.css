@@ -1,20 +1,20 @@
-/* === BASELINE SETUP: AxInterface w/ Shoelace + Custom Fonts === */
+/* === AXINTERFACE BRUTALIST ZINE MODE === */
 @import url('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css');
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* === COLORS === */
+/* === COLOR: BOLD & BRUTAL === */
 :root {
-  --color-bg: #fdfaf6;
-  --color-text: #111111;
-  --color-accent: #e63946;
-  --color-subtle: #5a5a5a;
-  --color-border: #e0ded9;
-  --color-quote: #a90000;
-  --color-link: #2222cc;
-  --color-note-bg: #f4f1eb;
+  --color-bg: #ffeef2;
+  --color-text: #000000;
+  --color-accent: #ff0080;
+  --color-subtle: #555;
+  --color-border: #000000;
+  --color-quote: #0088ff;
+  --color-link: #1111ff;
+  --color-note-bg: #fffbe6;
 }
 
-/* === GLOBAL RESET === */
+/* === RESET === */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -26,14 +26,8 @@ body {
   font-size: 18px;
   line-height: 1.7;
   padding: 2rem;
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
-}
-
-img, video, canvas {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 a {
@@ -43,29 +37,48 @@ a {
 
 a:hover {
   color: var(--color-accent);
+  text-decoration-style: wavy;
 }
 
 /* === MASTHEAD === */
+.site-header {
+  background: #ffec00;
+  padding: 1rem;
+  border: 2px solid #000;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
 .site-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-  font-size: clamp(1.75rem, 6vw, 3rem);
+  font-size: clamp(2rem, 7vw, 3.25rem);
   text-transform: uppercase;
-  margin-bottom: 0.25rem;
-  word-break: break-word;
+  margin: 0;
+  color: #000;
+  line-height: 1;
 }
 
 .site-subtitle {
   font-family: 'Kurdis-Wide', serif;
-  font-size: clamp(0.85rem, 2.5vw, 1rem);
-  color: var(--color-subtle);
-  margin-top: 0;
-  word-break: break-word;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #000;
+  margin-top: 0.25rem;
 }
 
-@media (max-width: 600px) {
-  .site-header {
-    text-align: center;
-  }
+/* === NAV === */
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: square;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+nav a {
+  font-family: 'Kurdis-Condensed', serif;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-transform: uppercase;
 }
 
 /* === TYPOGRAPHY === */
@@ -93,7 +106,11 @@ h3 {
 
 /* === ARTICLE === */
 article {
-  margin-top: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 0 #000;
 }
 
 blockquote {
@@ -101,9 +118,10 @@ blockquote {
   font-size: 1.1rem;
   font-style: normal;
   color: var(--color-text);
-  border-left: 4px solid var(--color-quote);
+  border-left: 4px dashed var(--color-quote);
   padding-left: 1rem;
   margin: 2rem 0;
+  background: var(--color-note-bg);
 }
 
 /* === GRID SYSTEM === */
@@ -133,14 +151,22 @@ blockquote {
 }
 
 .article-preview {
-  border-top: 1px solid var(--color-border);
-  padding-top: 1rem;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  padding: 1.25rem;
+  box-shadow: 3px 3px 0 #000;
+  transition: transform 0.15s ease;
+}
+
+.article-preview:hover {
+  transform: scale(1.01);
 }
 
 .article-preview h2 {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0.25rem;
+  color: var(--color-text);
 }
 
 .article-preview .byline {
@@ -179,8 +205,11 @@ blockquote {
 
 /* === FOOTER === */
 footer {
-  margin-top: 4rem;
-  font-size: 0.85rem;
-  color: var(--color-subtle);
+  background: #000;
+  color: #fff;
   text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  margin-top: 4rem;
+  border-top: 4px double #ffec00;
 }
