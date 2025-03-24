@@ -89,6 +89,12 @@ blockquote {
   padding: 1.5rem;
   border-radius: 0.5rem;
   color: #e0f7e9;
+  transition: all 0.2s ease;
+}
+
+.article-preview:hover {
+  border-color: #b9fbc0;
+  background-color: #20392e;
 }
 
 .article-preview h2 {
@@ -108,6 +114,13 @@ blockquote {
 .article-preview p {
   font-size: 1rem;
   color: #d7f8d4;
+}
+
+.article-preview .tagline {
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  color: #cce9d6;
+  margin-top: 0.5rem;
 }
 
 /* === FOOTER === */
