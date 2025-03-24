@@ -1,6 +1,6 @@
 # Out of Scope Magazine
 
-[![Vercel](https://vercelbadge.vercel.app/api/quarterback/outofscope)](https://vercel.com/quarterback/outofscope)
+[![Vercel](https://vercelbadge.vercel.app/api/quarterback/terminal-life)](https://vercel.com/quarterback/terminal-life)
 ![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)
 ![HTML](https://img.shields.io/badge/code-HTML%2FCSS-blue)
 ![Status: Independent & Ad-Free](https://img.shields.io/badge/status-independent-brightgreen)
