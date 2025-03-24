@@ -1,133 +1,75 @@
-/* === AXINTERFACE BRUTALIST ZINE MODE === */
-@import url('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css');
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* === COLOR: BOLD & BRUTAL === */
-:root {
-  --color-bg: #ffeef2;
-  --color-text: #000000;
-  --color-accent: #ff4444;
-  --color-subtle: #555;
-  --color-border: #000000;
-  --color-quote: #0088ff;
-  --color-link: #6a0000;
-  --color-note-bg: #e5e5e5;
-}
-
-/* === RESET === */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
+/* === BASE === */
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
   font-family: 'Spectral', serif;
   font-size: 18px;
   line-height: 1.7;
+  background-color: #0f1f17; /* deep green-charcoal */
+  color: #f0f0f0;
+  margin: 0;
   padding: 2rem;
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
-  color: var(--color-link);
+  color: #b9fbc0;
   text-decoration: underline;
 }
 
-a:hover {
-  color: var(--color-accent);
-  text-decoration-style: wavy;
-}
-
 /* === MASTHEAD === */
-.site-header {
-  background: #ffec00;
-  padding: 1rem;
-  border: 2px solid #000;
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
 .site-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-  font-size: clamp(2rem, 7vw, 3.25rem);
+  font-size: 3rem;
   text-transform: uppercase;
-  margin: 0;
-  color: #000;
-  line-height: 1;
+  margin-bottom: 0.25rem;
+  color: #fefefe;
 }
 
 .site-subtitle {
   font-family: 'Kurdis-Wide', serif;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: #000;
-  margin-top: 0.25rem;
+  font-size: 1rem;
+  margin-top: 0;
+  color: #99a99f;
 }
 
-/* === NAV === */
-nav ul {
-  display: flex;
-  gap: 1.25rem;
-  list-style: square;
-  padding: 0;
-  margin: 0 0 2rem;
-}
-
-nav a {
-  font-family: 'Kurdis-Condensed', serif;
-  font-size: 0.95rem;
-  color: var(--color-text);
-  text-transform: uppercase;
-}
-
-/* === TYPOGRAPHY === */
-h2, h3 {
+/* === ARTICLE PAGE === */
+.article-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
   margin-top: 2rem;
-  margin-bottom: 0.5rem;
 }
 
-h2 {
-  font-size: 1.6rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.byline,
-.metadata,
-.footnotes {
+.byline {
   font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
-  color: var(--color-subtle);
+  color: #cccccc;
+  margin-bottom: 2rem;
 }
 
-/* === ARTICLE === */
-article {
-  background: #fff;
-  padding: 2rem;
-  border: 1px solid var(--color-border);
-  margin-bottom: 2rem;
-  box-shadow: 4px 4px 0 #000;
+.callout {
+  background-color: #1d3329;
+  color: #caffbf;
+  padding: 1rem;
+  border-left: 5px solid #b9fbc0;
+  margin: 2rem 0;
+  font-family: 'Kurdis-Wide', serif;
+  font-size: 1rem;
 }
 
 blockquote {
   font-family: 'Kurdis-Condensed', serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-style: normal;
-  color: var(--color-text);
-  border-left: 4px dashed var(--color-quote);
-  padding-left: 1rem;
+  background-color: #172a22;
+  color: #e7fce1;
+  padding: 1rem 1.5rem;
   margin: 2rem 0;
-  background: #e5e5e5;
-  box-shadow: inset 2px 2px 0 rgba(0,0,0,0.1);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  border-left: 4px solid #b9fbc0;
 }
 
-/* === GRID SYSTEM === */
+/* === ARTICLE LISTING === */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -135,84 +77,43 @@ blockquote {
   margin-top: 2rem;
 }
 
-@media (min-width: 600px) {
-  .grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 900px) {
-  .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (min-width: 768px) {
-  .grid-auto {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .grid.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .article-preview {
-  background: #fff;
-  border: 1px solid var(--color-border);
-  padding: 1.25rem;
-  box-shadow: 3px 3px 0 #000;
-  transition: transform 0.15s ease;
-}
-
-.article-preview:hover {
-  transform: scale(1.01);
+  background-color: #1a2e25;
+  border: 1px solid #26473b;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #e0f7e9;
 }
 
 .article-preview h2 {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 0.25rem;
-  color: var(--color-text);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 .article-preview .byline {
   font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
-  color: var(--color-subtle);
+  color: #a6b6ad;
+  margin-bottom: 0.5rem;
 }
 
-/* === FOOTNOTES & ANNOTATIONS === */
-.fn {
-  cursor: help;
-  border-bottom: 1px dashed var(--color-subtle);
-  position: relative;
-}
-
-.fn::after {
-  content: attr(data-note);
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 220px;
-  background: var(--color-text);
-  color: #fff;
-  font-size: 0.85rem;
-  padding: 0.5rem;
-  border: 1px solid #fff;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 10;
-}
-
-.fn:hover::after {
-  opacity: 1;
+.article-preview p {
+  font-size: 1rem;
+  color: #d7f8d4;
 }
 
 /* === FOOTER === */
 footer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.85rem;
   margin-top: 4rem;
-  border-top: 4px double #ffec00;
+  font-size: 0.85rem;
+  color: #88968e;
+  text-align: center;
 }
