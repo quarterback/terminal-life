@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Out of Scope</title>
-  <meta name="description" content="Out of Scope is a critical publication examining the politics of design, infrastructure, and digital life. Essays, fragments, and provocations about how interfaces shape power.">
+  <title>Out of Scope – A Consequence Design Reader</title>
+  <meta name="description" content="Out of Scope is a critical publication examining the politics of design, infrastructure, and digital life through the lens of consequence design.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
@@ -13,35 +13,106 @@
   <link rel="stylesheet" href="fonts/kurdis-condensed.css">
   <link rel="stylesheet" href="fonts/kurdis-extrawide-extrabold.css">
 
-  <!-- Shoelace + Custom -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- UnoCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+
+  <style>
+    body {
+      font-family: 'Spectral', serif;
+      background-color: #f9f7f1;
+      color: #1e1e1e;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+    }
+
+    .subtitle {
+      font-family: 'Kurdis-Wide', serif;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #8b1e1e;
+    }
+
+    a:hover {
+      color: #aa3b3b;
+    }
+
+    .section-header {
+      color: #8b1e1e;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .link-list li {
+      margin-bottom: 0.75rem;
+    }
+
+    .link-list a {
+      font-weight: 500;
+      font-family: 'Kurdis-Wide', serif;
+    }
+  </style>
 </head>
-<body>
-  <header class="site-header">
-    <h1 class="site-title">Out of Scope</h1>
-    <p class="site-subtitle">Critical ideas in uncanny times</p>
+<body class="p-6 md:p-12 max-w-screen-md mx-auto leading-relaxed">
+
+  <!-- Header -->
+  <header class="mb-10 text-center">
+    <h1 class="text-4xl md:text-5xl tracking-wide">Out of Scope</h1>
+    <p class="subtitle text-base text-neutral-600 mt-2">A Consequence Design Reader</p>
+
+    <!-- Nav -->
+    <nav class="mt-6">
+      <ul class="flex flex-wrap justify-center gap-4 text-sm text-neutral-700">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/qx/index.html">QX Reader</a></li>
+        <li><a href="/theory/index.html">Theory</a></li>
+        <li><a href="/interface-glossary.html">Glossary</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav style="margin-top: 1rem;">
-    <ul style="display: flex; gap: 1.5rem; list-style: none; padding: 0;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="interface-glossary.html">Glossary</a></li>
-    </ul>
-  </nav>
+  <!-- Main -->
+  <main class="space-y-12">
 
-  <main>
-    <section style="margin-top: 3rem;">
-      <h2 style="font-family: 'Kurdis-ExtraWideExtraBold', sans-serif; font-size: 1.6rem; color: #b9fbc0;">Recent Articles</h2>
-      <div id="article-list" class="grid grid-2"></div>
+    <section>
+      <h2 class="section-header">QX Reader</h2>
+      <p class="section-description">Structured essays, fragments, and provocations tracing the evolution of consequence design and its critique of interface power.</p>
+      <ul class="link-list">
+        <li><a href="/qx/index.html">→ Enter the QX Archive</a></li>
+      </ul>
     </section>
+
+    <section>
+      <h2 class="section-header">Strategy & Theory</h2>
+      <p class="section-description">Conceptual structures, unfinished thoughts, and notes from beneath the surface—where governance, aesthetics, and systems meet.</p>
+      <ul class="link-list">
+        <li><a href="/theory/index.html">→ Browse Theory Notes</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-header">Glossary</h2>
+      <p class="section-description">Working definitions of traps, metaphors, and discourse constraints found in digital systems and institutional design.</p>
+      <ul class="link-list">
+        <li><a href="/interface-glossary.html">→ View the Interface Glossary</a></li>
+      </ul>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 Out of Scope — <a href="about.html">About</a></p>
+  <!-- Footer -->
+  <footer class="mt-20 pt-8 text-sm text-neutral-500 text-center border-t border-neutral-300">
+    &copy; 2025 Out of Scope — Built weird on purpose.
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

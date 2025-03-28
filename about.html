@@ -2,53 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About – Out of Scope</title>
-  <meta name="description" content="About Out of Scope, a critical publication examining the politics of design, infrastructure, and digital life.">
+  <title>About — Out of Scope</title>
+  <meta name="description" content="Out of Scope is a critical publication exploring interface logic, infrastructure collapse, and digital consequence.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts & Styles -->
+  <header class="mb-12 text-center">
+  <h1 class="text-4xl tracking-tight">About</h1>
+  <p class="subtitle text-base text-neutral-600 mt-2">Updated April 2025</p>
+
+  <!-- SVG Icon -->
+  <div class="mt-6">
+  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-8">
+  <circle cx="32" cy="32" r="30" stroke="#784421" stroke-width="2"/>
+  <path d="M32 2 C50 12, 52 52, 32 62 C14 52, 12 12, 32 2 Z" fill="#b54728" opacity="0.1"/>
+  <path d="M32 8 C46 16, 48 48, 32 56 C18 48, 16 16, 32 8 Z" fill="#b54728" opacity="0.2"/>
+  <path d="M32 14 C42 20, 44 44, 32 50 C22 44, 20 20, 32 14 Z" fill="#b54728" opacity="0.35"/>
+  <circle cx="32" cy="32" r="4" fill="#784421"/>
+</svg>
+  </div>
+
+  <p class="mt-4"><a href="/">← Back to Out of Scope</a></p>
+</header>
+
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fonts/kurdis-regular.css">
   <link rel="stylesheet" href="fonts/kurdis-wide.css">
   <link rel="stylesheet" href="fonts/kurdis-condensed.css">
   <link rel="stylesheet" href="fonts/kurdis-extrawide-extrabold.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- UnoCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+
+  <style>
+    body {
+      font-family: 'Spectral', serif;
+      background-color: #fdfaf3;
+      color: #1c1c1c;
+    }
+
+    h1, h2 {
+      font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+    }
+
+    .subtitle {
+      font-family: 'Kurdis-Wide', serif;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #784421;
+    }
+
+    a:hover {
+      color: #b54728;
+    }
+
+    blockquote {
+      font-family: 'Kurdis-Condensed', serif;
+      font-size: 1.15rem;
+      background-color: #f5eee4;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-left: 4px solid #b54728;
+    }
+  </style>
 </head>
-<body>
-  <header class="site-header">
-    <h1 class="site-title">Out of Scope</h1>
-    <p class="site-subtitle">Critical ideas in uncanny times</p>
+<body class="p-6 md:p-12 max-w-screen-md mx-auto leading-relaxed">
+
+  <header class="mb-12">
+    <h1 class="text-4xl tracking-tight">About</h1>
+    <p class="subtitle text-base text-neutral-600 mt-2">Updated April 2025</p>
+    <p class="mt-4"><a href="/">← Back to Out of Scope</a></p>
   </header>
 
-  <nav style="margin-top: 1rem;">
-    <ul style="display: flex; gap: 1.5rem; list-style: none; padding: 0;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="interface-glossary.html">Glossary</a></li>
-    </ul>
-  </nav>
+  <main class="space-y-6">
 
-  <main>
-    <article>
-      <h2 class="article-title">About</h2>
-      <p class="byline">Updated April 2025</p>
+    <p><strong>Out of Scope</strong> is a critical zine about digital life at the edge of collapse. It collects research fragments, speculative essays, and infrastructural autopsies—written in response to the interfaces, policies, and platforms that shape power in the background of everyday life.</p>
 
-      <p><strong>Out of Scope</strong> is a critical zine about the politics of infrastructure, digital friction, and the aestheticization of resistance. It’s a slow-burn response to the fast-churn world of platform logic, designed to interrogate what we’ve lost in the pursuit of seamlessness.</p>
+    <p>Originally conceived as a companion to the <a href="/qx/">Consequence Design Reader</a>, this project expands into broader terrain: how systems break, how authority is aestheticized, and how infrastructure fails while pretending not to.</p>
 
-      <p>This project lives between design criticism, systems analysis, and speculative documentation. The essays here often trace quiet patterns beneath loud interfaces — platform failure, pseudo-participation, data illusions, institutional decay, and techno-political sleight of hand.</p>
+    <blockquote>
+      The interface didn’t glitch. It obeyed power.
+    </blockquote>
 
-      <blockquote>
-        The interface didn’t glitch. It obeyed power.
-      </blockquote>
+    <p>This site is organized around two guides: <a href="/qx/">QX</a>, a structured archive of essays on consequence design, and <a href="/theory/">Theory</a>, a more fragmented cavern of speculative notes, half-built concepts, and ongoing thought experiments.</p>
 
-      <p>Founded in 2025, Out of Scope is edited, designed, and written by <strong>Tristen B. Vornanen</strong>, a pseudonymous researcher working across interface governance, service design, and strategic foresight. The project is affiliated with the fictional <strong>Sarkolin Institute</strong>.</p>
-
-    </article>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Out of Scope — <a href="index.html">Return Home</a></p>
+  <footer class="mt-20 pt-8 text-sm text-neutral-500 text-center border-t border-neutral-300">
+    &copy; 2025 Out of Scope — Built weird on purpose.
   </footer>
+
 </body>
 </html>
