@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Out of Scope</title>
-  <meta name="description" content="Out of Scope is a critical publication examining the politics of design, infrastructure, and digital life. Essays, fragments, and provocations about how interfaces shape power.">
+  <meta name="description" content="Out of Scope is a critical publication examining the politics of design, infrastructure, and digital life.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
@@ -13,35 +13,87 @@
   <link rel="stylesheet" href="fonts/kurdis-condensed.css">
   <link rel="stylesheet" href="fonts/kurdis-extrawide-extrabold.css">
 
-  <!-- Shoelace + Custom -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- UnoCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+
+  <style>
+    body {
+      font-family: 'Spectral', serif;
+      background-color: #fdfaf3;
+      color: #1c1c1c;
+    }
+
+    h1, h2 {
+      font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+    }
+
+    .subtitle {
+      font-family: 'Kurdis-Wide', serif;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #784421;
+    }
+
+    a:hover {
+      color: #b54728;
+    }
+  </style>
 </head>
-<body>
-  <header class="site-header">
-    <h1 class="site-title">Out of Scope</h1>
-    <p class="site-subtitle">Critical ideas in uncanny times</p>
+<body class="p-6 md:p-12 max-w-screen-md mx-auto leading-relaxed">
+
+  <!-- Header -->
+  <header class="mb-12 text-center">
+    <h1 class="text-4xl md:text-5xl tracking-wide">Out of Scope</h1>
+    <p class="subtitle text-base text-neutral-600 mt-2">Critical ideas in uncanny times</p>
   </header>
 
-  <nav style="margin-top: 1rem;">
-    <ul style="display: flex; gap: 1.5rem; list-style: none; padding: 0;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="interface-glossary.html">Glossary</a></li>
-    </ul>
-  </nav>
+  <!-- Directory Nav -->
+  <main class="space-y-12">
 
-  <main>
-    <section style="margin-top: 3rem;">
-      <h2 style="font-family: 'Kurdis-ExtraWideExtraBold', sans-serif; font-size: 1.6rem; color: #b9fbc0;">Recent Articles</h2>
-      <div id="article-list" class="grid grid-2"></div>
+    <section>
+      <h2 class="text-2xl mb-4">📂 Archives</h2>
+      <ul class="grid gap-4">
+        <li class="border border-neutral-300 p-4 rounded-md hover:border-amber-600 transition-all">
+          <a href="/qx/index.html">
+            <strong>QX</strong><br/>
+            A reader of essays, fragments, and provocations on consequence design.
+          </a>
+        </li>
+        <li class="border border-neutral-300 p-4 rounded-md hover:border-amber-600 transition-all">
+          <a href="/theory/index.html">
+            <strong>Theory</strong><br/>
+            Notes from the deep end—unfinished thoughts, structures, and signals.
+          </a>
+        </li>
+      </ul>
     </section>
+
+    <section>
+      <h2 class="text-2xl mb-4">📎 Reference</h2>
+      <ul class="grid gap-4">
+        <li class="border border-neutral-300 p-4 rounded-md hover:border-amber-600 transition-all">
+          <a href="/interface-glossary.html">
+            <strong>Interface Glossary</strong><br/>
+            Working definitions and slippery concepts.
+          </a>
+        </li>
+        <li class="border border-neutral-300 p-4 rounded-md hover:border-amber-600 transition-all">
+          <a href="/about.html">
+            <strong>About</strong><br/>
+            What Out of Scope is, and what it isn’t.
+          </a>
+        </li>
+      </ul>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 Out of Scope — <a href="about.html">About</a></p>
+  <!-- Footer -->
+  <footer class="mt-20 pt-8 text-sm text-neutral-500 text-center border-t border-neutral-300">
+    &copy; 2025 Out of Scope — Built weird on purpose.
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
