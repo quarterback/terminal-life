@@ -3,8 +3,8 @@ body {
   font-family: 'Spectral', serif;
   font-size: 18px;
   line-height: 1.7;
-  background-color: #FFABAB; /* coral red */
-  color: #1C1C1C;
+  background-color: #f6f0ee; /* muted red base */
+  color: #1c1c1c;
   margin: 0;
   padding: 2rem;
   max-width: 900px;
@@ -13,15 +13,15 @@ body {
 }
 
 a {
-  color: #5E0B0B;
+  color: #7A1C1C; /* deep red */
   text-decoration: underline;
 }
 
 a:hover {
-  color: #811212;
+  color: #981F1F;
 }
 
-/* === NAV BAR === */
+/* === NAVIGATION === */
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +31,7 @@ nav ul {
   padding: 0;
   margin-top: 1rem;
   font-size: 0.95rem;
-  color: #4D3E3E;
+  color: #4d3e3e;
 }
 
 /* === HEADER === */
@@ -40,7 +40,7 @@ nav ul {
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 0.25rem;
-  color: #1C1C1C;
+  color: #1c1c1c;
   text-align: center;
 }
 
@@ -48,13 +48,13 @@ nav ul {
   font-family: 'Kurdis-Wide', serif;
   font-size: 1rem;
   margin-top: 0;
-  color: #4D3E3E;
+  color: #5b4b4b;
   text-align: center;
 }
 
 /* === SECTION HEADERS === */
 .section-header {
-  color: #5E0B0B;
+  color: #7A1C1C;
   font-size: 1.5rem;
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
   margin-bottom: 0.25rem;
@@ -63,27 +63,27 @@ nav ul {
 .section-description {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 /* === ARTICLE PAGE === */
 .article-title {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
   font-size: 2rem;
-  color: #1C1C1C;
+  color: #1c1c1c;
   margin-top: 2rem;
 }
 
 .byline {
   font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
-  color: #4D3E3E;
+  color: #4d3e3e;
   margin-bottom: 2rem;
 }
 
-/* === CALLOUTS === */
+/* === CALLOUT === */
 .callout {
-  background-color: #FFF2C2; /* pale gold */
+  background-color: #fff7d0;
   color: #3a2b1c;
   padding: 1rem;
   border-left: 5px solid #C28800;
@@ -92,19 +92,19 @@ nav ul {
   font-size: 1rem;
 }
 
-/* === BLOCKQUOTES === */
+/* === BLOCKQUOTE === */
 blockquote {
   font-family: 'Kurdis-Condensed', serif;
   font-size: 1.15rem;
   font-style: normal;
-  background-color: #FFD7D7;
+  background-color: #f1e7e0;
   color: #2a1616;
   padding: 1rem 1.5rem;
   margin: 2rem 0;
   border-left: 4px solid #C28800;
 }
 
-/* === ARTICLE LISTING (LEGACY) === */
+/* === ARTICLE LISTING (ARCHIVE) === */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -119,8 +119,8 @@ blockquote {
 }
 
 .article-preview {
-  background-color: #ffd1d1;
-  border: 1px solid #e3c2c2;
+  background-color: #fbeeed;
+  border: 1px solid #e4cece;
   padding: 1.5rem;
   border-radius: 0.5rem;
   color: #1c1c1c;
@@ -129,20 +129,20 @@ blockquote {
 
 .article-preview:hover {
   border-color: #C28800;
-  background-color: #ffe0e0;
+  background-color: #fff2ef;
 }
 
 .article-preview h2 {
   font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #1C1C1C;
+  color: #1c1c1c;
 }
 
 .article-preview .byline {
   font-family: 'Kurdis-Wide', serif;
   font-size: 0.85rem;
-  color: #4D3E3E;
+  color: #4d3e3e;
   margin-bottom: 0.5rem;
 }
 
@@ -154,11 +154,11 @@ blockquote {
 .article-preview .tagline {
   font-family: 'Spectral', serif;
   font-style: italic;
-  color: #5E0B0B;
+  color: #7A1C1C;
   margin-top: 0.5rem;
 }
 
-/* === ARCHIVE LISTS === */
+/* === LINK LISTS (TOC) === */
 .link-list li {
   margin-bottom: 0.75rem;
 }
@@ -166,19 +166,19 @@ blockquote {
 .link-list a {
   font-weight: 500;
   font-family: 'Kurdis-Wide', serif;
-  color: #5E0B0B;
+  color: #7A1C1C;
 }
 
 .link-list a:hover {
-  color: #811212;
+  color: #981F1F;
 }
 
 /* === FOOTER === */
 footer {
   margin-top: 4rem;
   font-size: 0.85rem;
-  color: #4D3E3E;
+  color: #4d3e3e;
   text-align: center;
-  border-top: 1px solid #e3c2c2;
+  border-top: 1px solid #e4cece;
   padding-top: 2rem;
 }
