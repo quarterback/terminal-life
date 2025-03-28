@@ -2,63 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Interface Discourse Traps – Out of Scope</title>
-  <meta name="description" content="A taxonomy of interface discourse traps critiqued by the parasitarchy framework. These traps shape how we talk about systems, governance, and digital life.">
+  <title>Interface Glossary — Out of Scope</title>
+  <meta name="description" content="A reference glossary of recurring interface discourse traps. Part of the Consequence Design Reader.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts & Styles -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/fonts/kurdis-regular.css">
   <link rel="stylesheet" href="/fonts/kurdis-wide.css">
   <link rel="stylesheet" href="/fonts/kurdis-condensed.css">
   <link rel="stylesheet" href="/fonts/kurdis-extrawide-extrabold.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.1/dist/themes/light.css">
-  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- UnoCSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+
+  <style>
+    body {
+      font-family: 'Spectral', serif;
+      background-color: #fdfaf3;
+      color: #1c1c1c;
+    }
+    h1, h2, h3 {
+      font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
+    }
+    .subtitle {
+      font-family: 'Kurdis-Wide', serif;
+    }
+    a {
+      text-decoration: underline;
+      color: #784421;
+    }
+    a:hover {
+      color: #b54728;
+    }
+    blockquote {
+      font-family: 'Kurdis-Condensed', serif;
+      font-size: 1.15rem;
+      background-color: #f5eee4;
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-left: 4px solid #b54728;
+    }
+    .term-list li {
+      margin-bottom: 1.25rem;
+    }
+    .term-list strong {
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color: #272727;
+    }
+    .jump-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body>
-  <header class="site-header">
-    <h1 class="site-title">Out of Scope</h1>
-    <p class="site-subtitle">Critical ideas in uncanny times</p>
+<body class="p-6 md:p-12 max-w-screen-md mx-auto leading-relaxed">
+
+  <!-- Header -->
+  <header class="mb-12">
+    <h1 class="text-3xl tracking-tight">Interface Glossary</h1>
+    <p class="subtitle text-neutral-600 text-base mt-1">A working reference from the Consequence Design Reader</p>
+    <p class="mt-4"><a href="/">← Back to Out of Scope</a></p>
   </header>
 
-  <nav style="margin-top: 1rem;">
-    <ul style="display: flex; gap: 1.5rem; list-style: none; padding: 0;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="interface-glossary.html">Glossary</a></li>
-    </ul>
-  </nav>
+  <!-- Intro -->
+  <main class="space-y-6">
 
-  <main>
-    <article>
-      <h2 class="article-title">Interface Discourse Traps: A Taxonomy</h2>
-      <p class="byline">Compiled as part of the parasitarchy framework</p>
+    <p>This glossary catalogs recurring terms, traps, and frames that shape how we talk about systems, governance, and digital life. These concepts often go unexamined, yet they profoundly shape our collective sense of what's possible, desirable, or inevitable in tech-mediated contexts.</p>
 
-      <p>Not all traps are lies. Some are architectures. Below is a working taxonomy of recurring interface discourse traps — rhetorical sleights, conceptual shortcuts, and ambient conditions — that the parasitarchy framework identifies and critiques.</p>
+    <blockquote>
+      These aren’t just rhetorical flourishes. They’re reality shapers. When a trap becomes common sense, it defines the boundaries of the imaginable.
+    </blockquote>
 
-      <div class="callout">
-        <strong>What is a discourse trap?</strong><br>
-        A recurring pattern that limits how we can talk about power, governance, or systems — often by framing problems as neutral, technical, or inevitable.
+    <p>What follows is a partial taxonomy of <strong>discourse traps</strong>: structural patterns and rhetorical devices that narrow critique, obscure consequence, and reinforce interface logic. Each is a mechanism of conceptual control—subtle, ambient, and often unacknowledged.</p>
+
+    <div class="border-l-4 border-amber-600 bg-amber-100/40 p-4 text-sm leading-snug">
+      <strong>Discourse Trap:</strong> A framing device that limits the ability to see or name systemic problems. Often technical in appearance, but political in effect.
+    </div>
+
+    <!-- Jump Links -->
+    <section class="jump-links mt-10 mb-6">
+      <h2 class="text-xl mb-2">Traps in this glossary:</h2>
+      <a href="#friction-aversion">Friction Aversion</a>
+      <a href="#abundance-shortcut">Abundance Shortcut</a>
+      <a href="#admin-aesthetics">Administrative Aesthetics</a>
+      <a href="#post-political-drift">Post-Political Drift</a>
+      <a href="#manageable-crisis">Manageable Crisis</a>
+      <a href="#retroactive-consent">Retroactive Consent</a>
+      <a href="#interface-realism">Interface Realism</a>
+    </section>
+
+    <!-- Glossary Terms -->
+    <section class="term-list">
+
+      <div id="friction-aversion">
+        <strong>Friction Aversion</strong><br/>
+        The assumption that any form of friction—bureaucratic, procedural, interpersonal—is inherently harmful. This trap conceals where friction serves as a form of care, deliberation, or necessary resistance to premature automation.
       </div>
 
-      <ul>
-        <li><strong>Friction Aversion</strong>: Assuming that removing friction (bureaucratic, social, procedural) is always progress. This trap masks where friction protects rights, deliberation, or care work.</li>
-        <li><strong>Abundance Shortcut</strong>: Framing material problems as purely supply-side, while ignoring the social conditions that shape distribution, access, and trust.</li>
-        <li><strong>Administrative Aesthetics</strong>: Confusing interface polish or technical coherence for institutional competence.</li>
-        <li><strong>Post-Political Drift</strong>: Framing political or structural conflicts as engineering challenges. Often seen in tech-forward policy discourse where disagreement is recast as design inefficiency.</li>
-        <li><strong>Manageable Crisis</strong>: Treating systemic breakdowns as isolated anomalies solvable through better tooling, instead of recognizing their structural causes.</li>
-        <li><strong>Retroactive Consent</strong>: Using engagement metrics or interface clicks as evidence of public will, flattening collective intent into behavioral data.</li>
-        <li><strong>Interface Realism</strong>: Treating digital affordances as metaphysically primary — as if a platform's design defines the limits of the real, the possible, the political.</li>
-      </ul>
+      <div id="abundance-shortcut">
+        <strong>Abundance Shortcut</strong><br/>
+        A tendency to frame social or infrastructural problems as merely a lack of supply. Ignores questions of trust, legitimacy, and distribution by assuming that more "stuff" is the solution to systemic breakdown.
+      </div>
 
-      <p>This taxonomy is not static. If anything, the traps evolve with the systems they cloak. But naming them is a start — a way to loosen their grip on our thought and build room for deeper critique.</p>
+      <div id="admin-aesthetics">
+        <strong>Administrative Aesthetics</strong><br/>
+        The conflation of visual polish, seamless interfaces, or minimalist design with institutional competence. Often masks bureaucratic fragility with the sheen of product design.
+      </div>
 
-      <p>Want to contribute more traps or real-world examples? <a href="mailto:contact@outofscopemag.com">Email the editor</a>.</p>
-    </article>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Out of Scope — <a href="/index.html">Return Home</a></p>
-  </footer>
-</body>
-</html>
+      <div id="post-political-drift">
+        <strong>Post-Political Drift</strong><br/>
+        Reframing political contestation as design inefficiency. Disagreement is seen not as structural conflict, but as something that can be resolved through better UX or smarter policy
