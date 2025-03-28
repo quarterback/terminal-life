@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Interface Glossary — Out of Scope</title>
-  <meta name="description" content="A taxonomy of interface discourse traps and design metaphors. Part of the Consequence Design Reader.">
+  <meta name="description" content="A reference glossary of recurring interface discourse traps. Part of the Consequence Design Reader.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
@@ -22,24 +22,19 @@
       background-color: #fdfaf3;
       color: #1c1c1c;
     }
-
-    h1, h2 {
+    h1, h2, h3 {
       font-family: 'Kurdis-ExtraWideExtraBold', sans-serif;
     }
-
     .subtitle {
       font-family: 'Kurdis-Wide', serif;
     }
-
     a {
       text-decoration: underline;
       color: #784421;
     }
-
     a:hover {
       color: #b54728;
     }
-
     blockquote {
       font-family: 'Kurdis-Condensed', serif;
       font-size: 1.15rem;
@@ -48,6 +43,20 @@
       margin: 2rem 0;
       border-left: 4px solid #b54728;
     }
+    .term-list li {
+      margin-bottom: 1.25rem;
+    }
+    .term-list strong {
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color: #272727;
+    }
+    .jump-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body class="p-6 md:p-12 max-w-screen-md mx-auto leading-relaxed">
@@ -55,44 +64,55 @@
   <!-- Header -->
   <header class="mb-12">
     <h1 class="text-3xl tracking-tight">Interface Glossary</h1>
-    <p class="subtitle text-neutral-600 text-base mt-1">A living vocabulary from the Consequence Design Reader</p>
+    <p class="subtitle text-neutral-600 text-base mt-1">A working reference from the Consequence Design Reader</p>
     <p class="mt-4"><a href="/">← Back to Out of Scope</a></p>
   </header>
 
-  <!-- Main Article -->
-  <main>
-    <article class="space-y-6">
+  <!-- Intro -->
+  <main class="space-y-6">
 
-      <p>This glossary catalogs the recurring traps, metaphors, and rhetorical sleights that shape how we talk about digital systems. These terms aren’t neutral—they define what counts as legitimate critique, what gets dismissed as inefficiency, and what disappears entirely.</p>
+    <p>This glossary catalogs recurring terms, traps, and frames that shape how we talk about systems, governance, and digital life. These concepts often go unexamined, yet they profoundly shape our collective sense of what's possible, desirable, or inevitable in tech-mediated contexts.</p>
 
-      <blockquote>
-        Not all traps are lies. Some are architectures.
-      </blockquote>
+    <blockquote>
+      These aren’t just rhetorical flourishes. They’re reality shapers. When a trap becomes common sense, it defines the boundaries of the imaginable.
+    </blockquote>
 
-      <p>The list below is part taxonomy, part diagnosis. It emerged through the development of the <a href="/qx/">Consequence Design</a> framework and the broader <a href="/theory/parasitarchy.html">parasitarchy thesis</a>. These traps evolve. But naming them gives us a way to think alongside their contours instead of inside their constraints.</p>
+    <p>What follows is a partial taxonomy of <strong>discourse traps</strong>: structural patterns and rhetorical devices that narrow critique, obscure consequence, and reinforce interface logic. Each is a mechanism of conceptual control—subtle, ambient, and often unacknowledged.</p>
 
-      <div class="callout border-l-4 border-amber-500 bg-amber-100/40 p-4 text-sm leading-normal">
-        <strong>Discourse Trap:</strong> A recurring rhetorical or structural pattern that limits how systems, institutions, or interfaces are allowed to be criticized — often by reducing political concerns to technical ones.
+    <div class="border-l-4 border-amber-600 bg-amber-100/40 p-4 text-sm leading-snug">
+      <strong>Discourse Trap:</strong> A framing device that limits the ability to see or name systemic problems. Often technical in appearance, but political in effect.
+    </div>
+
+    <!-- Jump Links -->
+    <section class="jump-links mt-10 mb-6">
+      <h2 class="text-xl mb-2">Traps in this glossary:</h2>
+      <a href="#friction-aversion">Friction Aversion</a>
+      <a href="#abundance-shortcut">Abundance Shortcut</a>
+      <a href="#admin-aesthetics">Administrative Aesthetics</a>
+      <a href="#post-political-drift">Post-Political Drift</a>
+      <a href="#manageable-crisis">Manageable Crisis</a>
+      <a href="#retroactive-consent">Retroactive Consent</a>
+      <a href="#interface-realism">Interface Realism</a>
+    </section>
+
+    <!-- Glossary Terms -->
+    <section class="term-list">
+
+      <div id="friction-aversion">
+        <strong>Friction Aversion</strong><br/>
+        The assumption that any form of friction—bureaucratic, procedural, interpersonal—is inherently harmful. This trap conceals where friction serves as a form of care, deliberation, or necessary resistance to premature automation.
       </div>
 
-      <ul class="list-disc pl-6 space-y-4 mt-6">
-        <li><strong>Friction Aversion</strong>: The belief that removing friction is inherently good. Ignores how friction protects process, dignity, or care.</li>
-        <li><strong>Abundance Shortcut</strong>: Treating supply as the solution to all distribution problems. Depoliticizes scarcity and erases systemic exclusion.</li>
-        <li><strong>Administrative Aesthetics</strong>: Mistaking visual polish or interface flow for institutional legitimacy.</li>
-        <li><strong>Post-Political Drift</strong>: Recasting political disagreement as technical inefficiency. Often deployed in “smart governance” schemes.</li>
-        <li><strong>Manageable Crisis</strong>: Treating institutional collapse as a tooling issue rather than a structural inevitability.</li>
-        <li><strong>Retroactive Consent</strong>: Using interface clicks or behavior logs to justify a lack of deliberation or opt-out pathways.</li>
-        <li><strong>Interface Realism</strong>: Believing that what can be done through the interface *is* the real—flattening politics into platform affordances.</li>
-      </ul>
+      <div id="abundance-shortcut">
+        <strong>Abundance Shortcut</strong><br/>
+        A tendency to frame social or infrastructural problems as merely a lack of supply. Ignores questions of trust, legitimacy, and distribution by assuming that more "stuff" is the solution to systemic breakdown.
+      </div>
 
-      <p class="mt-10">This glossary will evolve. Contributions, critiques, or new trap sightings are welcome.
+      <div id="admin-aesthetics">
+        <strong>Administrative Aesthetics</strong><br/>
+        The conflation of visual polish, seamless interfaces, or minimalist design with institutional competence. Often masks bureaucratic fragility with the sheen of product design.
+      </div>
 
-    </article>
-  </main>
-
-  <footer class="mt-20 pt-8 text-sm text-neutral-500 text-center border-t border-neutral-300">
-    &copy; 2025 Out of Scope — Built weird on purpose.
-  </footer>
-
-</body>
-</html>
+      <div id="post-political-drift">
+        <strong>Post-Political Drift</strong><br/>
+        Reframing political contestation as design inefficiency. Disagreement is seen not as structural conflict, but as something that can be resolved through better UX or smarter policy
